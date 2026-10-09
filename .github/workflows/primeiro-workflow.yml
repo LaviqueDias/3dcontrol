@@ -24,3 +24,7 @@ jobs:
 
       - name: Verificar memória disponível
         run: 'free -h'
+
+      - name: Confirmar branch principal
+        if: "Branch: $GITHUB_REF_NAME == 'main'"
+        run: 'echo "Este é o branch principal!"'
