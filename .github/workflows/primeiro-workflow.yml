@@ -1,0 +1,20 @@
+name: Meu primeiro workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  primeiro-job:
+    runs-on: ubuntu-latest
+
+    steps:
+	- name: Exibir mensagem inicial
+	  run: echo "Meu primeiro workflow está funcionando!"
+
+	- name: Exibir data e hora
+	  run: date
+
+	- name: Exibir branch atual
+	  run: echo "Branch: $GITHUB_REF_NAME"
