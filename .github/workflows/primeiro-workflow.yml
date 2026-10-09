@@ -17,4 +17,4 @@ jobs:
         run: date
 
       - name: Exibir branch atual
-        run: echo "Branch: $GITHUB_REF_NAME"
+        run: 'echo "Branch: $GITHUB_REF_NAME"'
