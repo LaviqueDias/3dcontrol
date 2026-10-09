@@ -18,3 +18,9 @@ jobs:
 
       - name: Exibir branch atual
         run: 'echo "Branch: $GITHUB_REF_NAME"'
+
+      - name: Verificar sistema operacional
+        run: 'cat /etc/os-release'
+
+      - name: Verificar memória disponível
+        run: 'free -h'
